@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        try(Scanner scanner = new Scanner(Paths.get("day1input.txt"))) {
+        try(Scanner scanner = new Scanner(Paths.get("input.txt"))) {
 
             SonarSolver solver = new SonarSolver();
             solver.readFromFile(scanner);
