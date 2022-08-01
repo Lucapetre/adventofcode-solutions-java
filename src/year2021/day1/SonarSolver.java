@@ -1,4 +1,4 @@
-package Year2021.day1;
+package year2021.day1;
 
 import java.util.ArrayList;
 import java.util.Scanner;

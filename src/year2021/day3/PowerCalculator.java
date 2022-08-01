@@ -1,4 +1,4 @@
-package Year2021.day3;
+package year2021.day3;
 
 import utilities.BitManipulator;
 

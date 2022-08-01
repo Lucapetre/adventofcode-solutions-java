@@ -1,4 +1,4 @@
-package Year2021.day5;
+package year2021.day5;
 
 import utilities.geometry.Line;
 
