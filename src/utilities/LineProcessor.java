@@ -8,7 +8,7 @@ public class LineProcessor {
     public static List<Integer> getNumbersFromInputString(String line) { // returns a list with numbers from a string
         List<Integer> integerList = new ArrayList<>();
 
-        String[] parts = line.split("[ ,]"); // see day 6
+        String[] parts = line.split("[ ,]"); // see day 6,7
         for (String part : parts) {
             integerList.add(Integer.valueOf(part));
         }
