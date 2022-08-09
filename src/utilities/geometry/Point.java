@@ -3,30 +3,26 @@ package utilities.geometry;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Point {
-
-    private final int x;
-    private final int y;
-
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
+public record Point(int x, int y) {
 
     public List<Point> getAdjacentPoints() {
         List<Point> neighbors = new ArrayList<>();
-        neighbors.add(new Point(x-1,y));
-        neighbors.add(new Point(x+1,y));
-        neighbors.add(new Point(x,y-1));
-        neighbors.add(new Point(x,y+1));
+        neighbors.add(new Point(x - 1, y));
+        neighbors.add(new Point(x + 1, y));
+        neighbors.add(new Point(x, y - 1));
+        neighbors.add(new Point(x, y + 1));
+        return neighbors;
+    }
+
+    public List<Point> getSquareAdjacentPoints() {
+        List<Point> neighbors = new ArrayList<>();
+        for (int i = x - 1; i <= x + 1 ; i++) {
+            for (int j = y - 1; j <= y + 1; j++) {
+                if(i != x || j != y) {
+                    neighbors.add(new Point(i,j));
+                }
+            }
+        }
         return neighbors;
     }
 
@@ -34,7 +30,7 @@ public class Point {
         return matrix[x][y];
     }
 
-    public void set(int[][] matrix,int value) {
+    public void set(int[][] matrix, int value) {
         matrix[x][y] = value;
     }
 }

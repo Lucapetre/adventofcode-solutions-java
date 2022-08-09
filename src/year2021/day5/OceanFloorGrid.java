@@ -29,9 +29,9 @@ public class OceanFloorGrid {
     }
 
     private void markHorizontalLine(Line line) {
-        int x = line.getStart().getX();
-        int start = Math.min(line.getStart().getY(),line.getEnd().getY());
-        int end = Math.max(line.getStart().getY(),line.getEnd().getY());
+        int x = line.getStart().x();
+        int start = Math.min(line.getStart().y(),line.getEnd().y());
+        int end = Math.max(line.getStart().y(),line.getEnd().y());
 
         for (int j = start; j <= end; j++) {
             grid[x][j]++;
@@ -39,9 +39,9 @@ public class OceanFloorGrid {
     }
 
     private void markVerticalLine(Line line) {
-        int y = line.getStart().getY();
-        int start = Math.min(line.getStart().getX(),line.getEnd().getX());
-        int end = Math.max(line.getStart().getX(),line.getEnd().getX());
+        int y = line.getStart().y();
+        int start = Math.min(line.getStart().x(),line.getEnd().x());
+        int end = Math.max(line.getStart().x(),line.getEnd().x());
 
         for (int i = start; i <= end; i++) {
             grid[i][y]++;
@@ -57,21 +57,21 @@ public class OceanFloorGrid {
 
     private void markDiagonalLine(Line line) {
 
-        if(line.getStart().getX() > line.getEnd().getX()) {
+        if(line.getStart().x() > line.getEnd().x()) {
             line.swapEnds(); //flip so x coordinates are in order
         }
 
-        int steps = line.getEnd().getX() - line.getStart().getX(); // basically diagonal distance
+        int steps = line.getEnd().x() - line.getStart().x(); // basically diagonal distance
 
         // 1,1->3,3
-        if (line.getStart().getY() - line.getStart().getX() == line.getEnd().getY() - line.getEnd().getX()) {
+        if (line.getStart().y() - line.getStart().x() == line.getEnd().y() - line.getEnd().x()) {
 
             for (int i = 0; i <= steps; i++) {
-                grid[line.getStart().getX() + i][line.getStart().getY() + i]++;
+                grid[line.getStart().x() + i][line.getStart().y() + i]++;
             }
         } else { //1,4 -> 2,3
             for (int i = 0; i <= steps; i++) {
-                grid[line.getStart().getX() + i][line.getStart().getY() - i]++;
+                grid[line.getStart().x() + i][line.getStart().y() - i]++;
             }
         }
     }

@@ -37,15 +37,15 @@ public class Line {
     }
 
     public boolean isHorizontal() {
-        return start.getX() == end.getX();
+        return start.x() == end.x();
     }
 
     public boolean isVertical() {
-        return start.getY() == end.getY();
+        return start.y() == end.y();
     }
 
     public boolean isDiagonal() {
-        return Math.abs(start.getY() - end.getY()) == Math.abs(end.getX() - start.getX()) ;
+        return Math.abs(start.y() - end.y()) == Math.abs(end.x() - start.x()) ;
     }
 
     public boolean isHorizontalOrVertical() {
