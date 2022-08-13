@@ -50,4 +50,8 @@ public record Point(int x, int y) {
     public void set(int[][] matrix, int value) {
         matrix[x][y] = value;
     }
+
+    public boolean inBounds(int width,int height) {
+        return x >= 0 && y >= 0 && x < width && y < height;
+    }
 }

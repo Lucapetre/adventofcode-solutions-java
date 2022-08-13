@@ -16,4 +16,20 @@ public class LineProcessor {
         return integerList;
     }
 
+    public static int[] getDigitsFromString(String line) {
+        int[] digits = new int[line.length()];
+        for (int i = 0; i < line.length(); i++) {
+            digits[i] = (int) line.charAt(i) - (int) '0';
+        }
+        return digits;
+    }
+
+    public static int[][] getDigitsFromStringList(List<String> line) {
+        int[][] digits = new int[line.size()][];
+        for (int i = 0; i < line.size(); i++) {
+            digits[i] = getDigitsFromString(line.get(i));
+        }
+        return digits;
+    }
+
 }
