@@ -1,4 +1,4 @@
-package year2021.day1;
+package year2021.day01;
 
 import java.io.IOException;
 import java.nio.file.Paths;

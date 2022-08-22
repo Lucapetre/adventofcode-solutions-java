@@ -1,4 +1,4 @@
-package year2021.day6;
+package year2021.day06;
 
 import utilities.ArrayUtils;
 

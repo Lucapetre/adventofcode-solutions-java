@@ -1,4 +1,4 @@
-package year2021.day9;
+package year2021.day08;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -18,14 +18,15 @@ public class Main {
             System.exit(1);
         }
 
-        List<String> input = new ArrayList<>();
-        while (inputReader.hasNextLine()) {
-            input.add(inputReader.nextLine());
-        }
+        List<String> inputStrings = new ArrayList<>();
 
-        RiskCalculator riskCalculator = new RiskCalculator(input);
-        riskCalculator.determineRiskLevelAndBasins();
-        System.out.println(riskCalculator);
+        while(inputReader.hasNextLine()) {
+            inputStrings.add(inputReader.nextLine());
+        }
+        SegmentCounter segmentCounter = new SegmentCounter(inputStrings);
+        segmentCounter.countEasyDigits();
+        segmentCounter.determineSum();
+        System.out.println(segmentCounter);
     }
 
 }

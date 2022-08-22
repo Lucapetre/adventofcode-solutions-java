@@ -1,4 +1,4 @@
-package year2021.day3;
+package year2021.day03;
 
 import utilities.BaseManipulator;
 

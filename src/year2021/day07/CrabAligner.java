@@ -1,4 +1,4 @@
-package year2021.day7;
+package year2021.day07;
 
 import java.util.List;
 import java.util.stream.Collectors;

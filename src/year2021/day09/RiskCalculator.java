@@ -1,4 +1,4 @@
-package year2021.day9;
+package year2021.day09;
 
 import utilities.ArrayUtils;
 import utilities.geometry.Point;

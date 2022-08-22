@@ -1,4 +1,4 @@
-package year2021.day2;
+package year2021.day02;
 
 public class Submarine {
 
