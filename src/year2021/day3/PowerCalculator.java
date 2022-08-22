@@ -1,6 +1,6 @@
 package year2021.day3;
 
-import utilities.BitManipulator;
+import utilities.BaseManipulator;
 
 public class PowerCalculator {
 
@@ -46,8 +46,8 @@ public class PowerCalculator {
     }
 
     public void calculateGammaAndEpsilon() {
-        gammaRate = BitManipulator.convertToBase10(gammaBits, true, 2);
-        epsilonRate = BitManipulator.convertToBase10(epsilonBits, true, 2);
+        gammaRate = BaseManipulator.convertToBase10(gammaBits, true, 2);
+        epsilonRate = BaseManipulator.convertToBase10(epsilonBits, true, 2);
     }
 
     public String toString() {

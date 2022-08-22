@@ -1,6 +1,6 @@
 package year2021.day3;
 
-import utilities.BitManipulator;
+import utilities.BaseManipulator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -94,10 +94,10 @@ public class LifeSupportRater {
     public void getO2AndCo2() {
         for (int i = 0; i < number; i++) {
             if (filteredO2Lines[i] == 1) {
-                o2Rate = BitManipulator.convertToBase10(bits[i],true,2);
+                o2Rate = BaseManipulator.convertToBase10(bits[i],true,2);
             }
             if (filteredCo2Lines[i] == 1) {
-                co2Rate = BitManipulator.convertToBase10(bits[i],true,2);
+                co2Rate = BaseManipulator.convertToBase10(bits[i],true,2);
             }
         }
     }
