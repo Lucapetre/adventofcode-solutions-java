@@ -54,4 +54,8 @@ public record Point(int x, int y) {
     public boolean inBounds(int width,int height) {
         return x >= 0 && y >= 0 && x < width && y < height;
     }
+
+    public boolean insideRectangleFromPoints(Point downLeft,Point upRight) {
+        return downLeft.x <= x && x <= upRight.x && downLeft.y <= y && y <= upRight.y;
+    }
 }
