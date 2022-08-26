@@ -3,7 +3,7 @@ package year2021.day07;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CrabAligner {
+class CrabAligner {
 
     private final List<Integer> crabList;
     private int minDistance;

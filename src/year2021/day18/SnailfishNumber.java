@@ -1,6 +1,6 @@
 package year2021.day18;
 
-public class SnailfishNumber {
+class SnailfishNumber {
 
     private SnailfishNumber parent;
     private SnailfishNumber leftChild;

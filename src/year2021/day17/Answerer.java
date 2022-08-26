@@ -1,6 +1,6 @@
 package year2021.day17;
 
-public class Answerer {
+class Answerer {
 
     private final ProbeThrower probeThrower;
 

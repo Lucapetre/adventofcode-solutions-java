@@ -2,7 +2,7 @@ package year2021.day04;
 
 import java.util.List;
 
-public class BingoBoard {
+class BingoBoard {
 
     private boolean bingo;
     private boolean calledBingo;

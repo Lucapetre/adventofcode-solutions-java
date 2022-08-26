@@ -1,12 +1,11 @@
 package year2021.day18;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Answerer {
+class Answerer {
 
     SnailfishNumber sum;
-    List<String> input;
+    final List<String> input;
     public Answerer(List<String> input) {
 
         this.input = input;

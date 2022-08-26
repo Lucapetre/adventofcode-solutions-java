@@ -3,10 +3,9 @@ package year2021.day17;
 import utilities.geometry.Point;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class ProbeThrower {
+class ProbeThrower {
 
     private final List<Point> validVelocities;
     private final Point leftDownTarget;

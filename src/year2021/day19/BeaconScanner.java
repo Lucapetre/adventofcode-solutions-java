@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class BeaconScanner {
+class BeaconScanner {
 
     private final List<Point3D> beacons;
     private boolean aligned;

@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class FishCounter {
+class FishCounter {
 
     private final long[][] fish; // fish[i][j] = number of fish with j counter at day i and i is mod 2
     private int daysPassed;

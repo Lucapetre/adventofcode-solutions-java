@@ -3,7 +3,7 @@ package year2021.day10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParenthesesStack {
+class ParenthesesStack {
 
     private final String line;
     private final List<Character> stack;

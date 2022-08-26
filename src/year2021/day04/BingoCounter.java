@@ -3,7 +3,7 @@ package year2021.day04;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BingoCounter {
+class BingoCounter {
 
     private final List<Integer> numbersCalled;
     private final List<BingoBoard> bingoBoards;

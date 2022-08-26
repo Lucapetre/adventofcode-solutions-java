@@ -2,12 +2,12 @@ package year2021.day16;
 
 import utilities.BaseManipulator;
 
-public abstract class Packet {
+abstract class Packet {
 
-    protected int version;
-    protected int ID;
+    protected final int version;
+    protected final int ID;
 
-    protected int startIndex;
+    protected final int startIndex;
     protected int endIndex;
 
     protected Packet(String binaryString, int index) {

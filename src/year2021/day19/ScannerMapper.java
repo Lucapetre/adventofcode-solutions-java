@@ -4,7 +4,7 @@ import utilities.geometry.Point3D;
 
 import java.util.*;
 
-public class ScannerMapper {
+class ScannerMapper {
 
     private final List<BeaconScanner> scanners;
     private final boolean[] triedAlignmentWithEveryone;

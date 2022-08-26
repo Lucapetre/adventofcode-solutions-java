@@ -5,17 +5,18 @@ import utilities.BaseManipulator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OperatorPacket extends Packet {
+class OperatorPacket extends Packet {
 
-    List<Packet> subpackets;
+    final List<Packet> subpackets;
 
     public OperatorPacket(String binaryString, int index) {
         super(binaryString, index);
         this.subpackets = new ArrayList<>();
         index += 6;
+        index++;
+        long bitLength;
         if(binaryString.charAt(index) == '0') {
-            index++;
-            long bitLength = BaseManipulator.convertBaseToDecimal(binaryString.substring(index,index + 15),2);
+            bitLength = BaseManipulator.convertBaseToDecimal(binaryString.substring(index, index + 15), 2);
             index += 15;
             while(bitLength > 0) {
                 Packet newPacket = PacketMaker.createPacket(binaryString,index);
@@ -23,19 +24,17 @@ public class OperatorPacket extends Packet {
                 bitLength -= newPacket.getLength();
                 index = newPacket.getEndIndex();
             }
-            this.endIndex = index;
         } else {
-            index++;
-            long numberOfPackets = BaseManipulator.convertBaseToDecimal(binaryString.substring(index,index + 11),2);
+            bitLength = BaseManipulator.convertBaseToDecimal(binaryString.substring(index, index + 11), 2);
             index += 11;
-            while(numberOfPackets > 0) {
+            while(bitLength > 0) {
                 Packet newPacket = PacketMaker.createPacket(binaryString,index);
                 subpackets.add(newPacket);
-                numberOfPackets --;
+                bitLength--;
                 index = newPacket.getEndIndex();
             }
-            this.endIndex = index;
         }
+        this.endIndex = index;
     }
 
     @Override

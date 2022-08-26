@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PolymerMapper {
+class PolymerMapper {
 
     public static Map<String,Integer> polymerPairMap;
     public static Map<String,Integer> polymerSingleMap;

@@ -3,7 +3,7 @@ package year2021.day10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SyntaxChecker {
+class SyntaxChecker {
 
     private int syntaxScore;
     private final long autocompleteScore;

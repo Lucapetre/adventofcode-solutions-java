@@ -2,7 +2,7 @@ package year2021.day16;
 
 import utilities.BaseManipulator;
 
-public class PacketMaker {
+class PacketMaker {
     public static Packet createPacket(String binaryString,int startIndex) {
 
         int index = startIndex + 3;

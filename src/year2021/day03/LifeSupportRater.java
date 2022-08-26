@@ -5,7 +5,7 @@ import utilities.BaseManipulator;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class LifeSupportRater {
+class LifeSupportRater {
 
     private final int size;
     private final int number; //of lines

@@ -6,7 +6,7 @@ import utilities.geometry.Point;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class RiskCalculator {
+class RiskCalculator {
 
     private final int lines;
     private final int columns;

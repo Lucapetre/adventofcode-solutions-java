@@ -2,9 +2,9 @@ package year2021.day03;
 
 import utilities.BaseManipulator;
 
-public class PowerCalculator {
+class PowerCalculator {
 
-    int size;
+    final int size;
     private final int[] bits1;
     private final int[] bits0;
 

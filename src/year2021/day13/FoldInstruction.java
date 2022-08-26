@@ -5,7 +5,7 @@ import utilities.geometry.Point;
 import java.util.HashSet;
 import java.util.Set;
 
-public class FoldInstruction {
+class FoldInstruction {
 
     private final char foldAcross;
     private final int coordinate;

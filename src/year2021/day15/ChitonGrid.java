@@ -7,7 +7,7 @@ import utilities.geometry.Point;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChitonGrid {
+class ChitonGrid {
 
     private final int size; // grid is a square
     private final int[][] grid;

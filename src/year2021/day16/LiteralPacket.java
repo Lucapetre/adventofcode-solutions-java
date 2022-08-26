@@ -2,7 +2,7 @@ package year2021.day16;
 
 import utilities.BaseManipulator;
 
-public class LiteralPacket extends Packet {
+class LiteralPacket extends Packet {
 
     private final long value;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class BacktrackPaths {
+class BacktrackPaths {
 
     private final boolean[] bigCaves;
     private final int size;

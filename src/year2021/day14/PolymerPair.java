@@ -1,6 +1,6 @@
 package year2021.day14;
 
-public class PolymerPair {
+class PolymerPair {
 
     private final String pairString;
     private final String child1String;

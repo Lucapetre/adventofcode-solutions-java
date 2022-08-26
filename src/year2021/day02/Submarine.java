@@ -1,6 +1,6 @@
 package year2021.day02;
 
-public class Submarine {
+class Submarine {
 
     private int depth;
     private int horizontalPosition;

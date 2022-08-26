@@ -4,7 +4,7 @@ import utilities.geometry.Line;
 
 import java.util.List;
 
-public class OceanFloorGrid {
+class OceanFloorGrid {
 
     private final int[][] grid;
     private final int size;

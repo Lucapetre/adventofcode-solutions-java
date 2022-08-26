@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SegmentCounter {
+class SegmentCounter {
 
     private final List<String> displays;
     private int easyDigits;

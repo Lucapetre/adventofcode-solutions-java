@@ -2,7 +2,7 @@ package year2021.day14;
 
 import java.util.Arrays;
 
-public class PolymerCalculator {
+class PolymerCalculator {
 
     private final long[] numberOfPair;
     private final String initialPolymer;

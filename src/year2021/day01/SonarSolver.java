@@ -3,7 +3,7 @@ package year2021.day01;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SonarSolver {
+class SonarSolver {
 
     private final ArrayList<Integer> depths;
 

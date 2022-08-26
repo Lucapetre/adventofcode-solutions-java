@@ -2,7 +2,7 @@ package year2021.day19;
 
 import java.util.List;
 
-public class Answerer {
+class Answerer {
 
     private final ScannerMapper scannerMapper;
     public Answerer(List<String> input) {

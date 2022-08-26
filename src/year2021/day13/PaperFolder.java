@@ -4,7 +4,7 @@ import utilities.geometry.Point;
 
 import java.util.*;
 
-public class PaperFolder {
+class PaperFolder {
 
     private Set<Point> pointSet;
     private final List<FoldInstruction> foldInstructions;

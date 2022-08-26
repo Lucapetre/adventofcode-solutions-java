@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CaveMapper {
+class CaveMapper {
 
     private final Map<String,Integer> caveMap;
     private final Map<Integer,String> reverseCaveMap;

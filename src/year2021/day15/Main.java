@@ -1,15 +1,13 @@
 package year2021.day15;
 
 import utilities.geometry.Point;
-import year2021.day14.PolymerCalculator;
-import year2021.day14.PolymerMapper;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 

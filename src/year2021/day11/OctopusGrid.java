@@ -5,7 +5,7 @@ import utilities.geometry.Point;
 
 import java.util.List;
 
-public class OctopusGrid {
+class OctopusGrid {
 
     private final int[][] grid;
     private final int width;
