@@ -20,7 +20,7 @@ class Main {
         }
 
         String inputLine = inputReader.nextLine();
-        List<Integer> crabList = LineProcessor.getNumbersFromInputString(inputLine);
+        List<Integer> crabList = LineProcessor.getNumbersFromInputString(inputLine, "[ ,]");
 
         CrabAligner crabAligner = new CrabAligner(crabList);
         crabAligner.calculateMinDistancePart1();

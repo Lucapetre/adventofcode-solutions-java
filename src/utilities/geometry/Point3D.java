@@ -75,6 +75,16 @@ public record Point3D (int x, int y, int z) {
         return Math.abs(this.x  - point.x) + Math.abs(this.y  - point.y) + Math.abs(this.z  - point.z);
     }
 
+    /*
+    public int at(int[][][] grid) {
+        return grid[x][y][z];
+    }
+    */
+
+    public void set(int[][][] grid, int value) {
+        grid[x][y][z] = value;
+    }
+
     @Override
     public String toString() {
         return x + "," + y + "," + z;

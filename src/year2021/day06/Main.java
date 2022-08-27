@@ -20,7 +20,7 @@ class Main {
         }
 
         String line = inputReader.nextLine();
-        List<Integer> inputList = LineProcessor.getNumbersFromInputString(line);
+        List<Integer> inputList = LineProcessor.getNumbersFromInputString(line, "[ ,]");
 
         FishCounter fishCounter = new FishCounter(inputList);
         fishCounter.passNDays(80);

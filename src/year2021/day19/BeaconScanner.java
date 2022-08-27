@@ -22,7 +22,7 @@ class BeaconScanner {
     public BeaconScanner(List<String> input) {
         this();
         for(String line:input) {
-            beacons.add(new Point3D(LineProcessor.getNumbersFromInputString(line)));
+            beacons.add(new Point3D(LineProcessor.getNumbersFromInputString(line, "[ ,]")));
         }
     }
 
